@@ -20,16 +20,31 @@ public class Clavier implements KeyListener{
 		main.scene.setDy2(y);
 	}
 	
+	public int BoucleD(int l) {
+		l=l+1;
+		if (l>4) {
+			l=1;
+		}
+		return l;
+	}
+	
+	public int BoucleG(int l) {
+		l=l-1;
+		if (l<1) {
+			l=4;
+		}
+		return l;
+	}
+
+	
 
 	public void keyPressed(KeyEvent e) {
 		
 		
 		if(e.getKeyCode()==KeyEvent.VK_D) {
 
-			m=m+1;
-			if (m>4) {
-				m=1;
-			}
+			m=BoucleD(m);
+			
 			if (m==1) {
 				moveJ1(0,-2);
 			}
@@ -47,7 +62,9 @@ public class Clavier implements KeyListener{
 		
 		
 		else if(e.getKeyCode()==KeyEvent.VK_Q) {
-			m=m-1;
+			
+			m=BoucleG(m);
+			
 			if (m<1) {
 				m=4;
 			}
@@ -69,7 +86,9 @@ public class Clavier implements KeyListener{
 		
 		
 		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
-			n=n+1;
+			
+			n=BoucleD(n);
+			
 			if (n>4) {
 				n=1;
 			}
@@ -88,7 +107,9 @@ public class Clavier implements KeyListener{
 			}
 		}
 		else if(e.getKeyCode()==KeyEvent.VK_LEFT) {
-				n=n-1;
+			
+				n=BoucleG(n);
+				
 				if (n<1) {
 					n=4;
 				}
