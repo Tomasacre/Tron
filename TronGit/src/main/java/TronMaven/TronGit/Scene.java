@@ -200,6 +200,17 @@ public class Scene extends JPanel {
 	
 	
 	
+	
+	public int co( int x, int y) {
+		int tac=0;
+		if (x < 0 || x > 1200 || y < 0 || y > 800 || Map[div(x)][div(y)] != 0) {
+			tac=1;
+		}
+		return tac;
+	}
+	
+	
+	
 	// Permet de dessiner en java
 	public void paintComponent(Graphics g) {
 
@@ -219,19 +230,23 @@ public class Scene extends JPanel {
 			this.dx2 = 0;
 			this.dy2 = 0;
 		} 
-		else if (this.xJ1 < 0 || this.xJ1 > 1200 || this.yJ1 < 0 || this.yJ1 > 800 || Map[div(xJ1)][div(yJ1)] != 0) {
+		//else if (this.xJ1 < 0 || this.xJ1 > 1200 || this.yJ1 < 0 || this.yJ1 > 800 || Map[div(xJ1)][div(yJ1)] != 0) {
 			/*
 			 * this.xJ1 = 20; this.yJ1 = 18; this.dx1 = 0; this.dy1 = 0; this.xJ2 = 1180;
 			 * this.yJ2 = 782; this.dx2 = 0; this.dy2 = 0;
 			 */
 			// System.out.println("J1 est sorti de l'écran");
 			// fenetre.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		else if (co(this.xJ1, this.yJ1)==1) {
+		
 			j1Loose = new JOptionPane();
 			fin = 1;
 			j1Loose.showMessageDialog(null, "Joueur 2 a gagné en " + this.temps.getCompteurTemps() + " secondes.","Fin de partie", JOptionPane.ERROR_MESSAGE);
 			System.exit(0);
 		} 
-		else if (this.xJ2 < 0 || this.xJ2 > 1200 || this.yJ2 < 0 || this.yJ2 > 800 || Map[div(xJ2)][div(yJ2)] != 0) {
+		else if (co(this.xJ2, this.yJ2)==1) {
+		
+		//else if (this.xJ2 < 0 || this.xJ2 > 1200 || this.yJ2 < 0 || this.yJ2 > 800 || Map[div(xJ2)][div(yJ2)] != 0) {
 			/*
 			 * this.xJ1 = 20; this.yJ1 = 18; this.dx1 = 0; this.dy1 = 0; this.xJ2 = 1180;
 			 * this.yJ2 = 782; this.dx2 = 0; this.dy2 = 0;
