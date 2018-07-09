@@ -274,8 +274,7 @@ public class Scene extends JPanel {
 			}
 		}
 
-		// g2.drawImage(this.murJaune.getImgJ1(), this.xJ1, this.yJ1, null);
-		// g2.drawImage(this.murRouge.getImgJ2(), this.xJ2, this.yJ2, null);
+
 
 	}
 
