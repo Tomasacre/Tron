@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import TronMaven.TronGit.Clavier;
+
 
 /**
  * Test les méthodes de la classe Clavier.
@@ -15,7 +17,7 @@ import org.junit.Test;
  *
  *@see Clavier
  */
-public class testClavier {
+public class ClavierTest {
 	
 	
 	/**

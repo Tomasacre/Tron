@@ -1,0 +1,3 @@
+javadoc=doc
+Jxr=target/site/xref
+Surefire=target/site/surefire report

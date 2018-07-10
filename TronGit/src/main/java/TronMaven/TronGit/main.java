@@ -2,6 +2,8 @@ package TronMaven.TronGit;
 
 import javax.swing.JFrame;
 
+import TronMaven.TronGit.Scene;
+
 
 /**
  * Classe main du programme

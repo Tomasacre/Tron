@@ -3,6 +3,7 @@ package TronMaven.TronGit;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+import TronMaven.TronGit.Scene;
 
 
 /**
@@ -15,7 +16,7 @@ import org.junit.Test;
  *
  *@see Scene
  */
-public class testScene {
+public class SceneTest {
 	
 	
 	/**
