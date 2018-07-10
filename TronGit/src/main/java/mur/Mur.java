@@ -1,55 +1,37 @@
 package mur;
 
+import TronMaven.TronGit.*;
+
+/**
+ * Classe mur
+ * 
+ * Cette classe défini les paramètres de tous les murs.
+ * 
+ * @author Thomas
+ *
+ * @see MurJaune
+ * @see MurRouge
+ * @see Scene 
+ */
 public class Mur {
 	
-	private int largeur;
-	private int hauteur;
-	private int x;
-	private int y;
-	
-	
-	//Constructeur
+	/**
+	 * Coordonnées x et y des murs.
+	 */
+	private int x,y;
+
+
+	/**
+	 * Constructeur de la classe mur.
+	 * 
+	 * @param x
+	 * 			Coordonnées x du mur.
+	 * @param y
+	 * 			Coordonnées y du mur.
+	 */
 	public Mur(int x, int y) {
-		this.largeur = 2;
-		this.hauteur = 2;
+
 		this.x=x;
-		this.y=y;
-	}
-
-
-	public int getLargeur() {
-		return largeur;
-	}
-
-
-	
-	public int getHauteur() {
-		return hauteur;
-	}
-
-
-	
-	public int getX() {
-		return x;
-	}
-
-
-	public void setX(int x) {
-		this.x = x;
-	}
-
-
-	public int getY() {
-		return y;
-	}
-
-
-	public void setY(int y) {
-		this.y = y;
-	}
-	
-
-	
-	
-	
+		this.y=y;		
+	}	
 }
