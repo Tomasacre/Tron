@@ -26,7 +26,7 @@ public class main {
 	 */	
 	public static Scene scene;
 	
-	
+	 
 	/**
 	 * La m principale "main"
 	 * Elle contient la création de la fenêtre
