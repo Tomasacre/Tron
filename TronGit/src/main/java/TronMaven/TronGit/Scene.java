@@ -111,7 +111,7 @@ public class Scene extends JPanel {
 	 * Par la suite, les 1 représenteront les murs laissés par le joueur 1.
 	 * Les 2 représenteront les murs laissés par le joueur 2.
 	 */
-	int Map[][] = new int[600][400];
+	int Map[][] = new int[601][401];
 	/**
 	 * i et j sont les variables pour parcourir la map.
 	 */
@@ -349,7 +349,7 @@ public class Scene extends JPanel {
 	 */
 	public boolean mort( int x, int y) {
 		boolean tac=false;
-		if (x < 0 || x > 1200 || y < 0 || y > 800 || Map[div(x)][div(y)] != 0) {
+		if (x < 0 || x > 1202 || y < 0 || y > 802 || Map[div(x)][div(y)] != 0) {
 			tac=true;
 		}
 		return tac;
@@ -440,8 +440,8 @@ public class Scene extends JPanel {
 		}
 		
 		
-		for (i = 0; i < 600; i++) {
-			for (j = 0; j < 400; j++) {
+		for (i = 0; i < 601; i++) {
+			for (j = 0; j < 401; j++) {
 				draw(i , j);
 				if (draw(i , j) == 1) {
 					g2.drawImage(this.murJaune.getImgJ1(), mul(i), mul(j), null);
