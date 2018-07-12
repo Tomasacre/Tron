@@ -17,7 +17,7 @@ public class Clavier implements KeyListener{
 	/**
 	 * m indique la direction du joueur 1.
 	 * Elle est initialisé vers le sud (bas) au début.
-	 * 1:Nord	2:Est 3:Sud 4:Ouest
+	 * 1:Nord	2:Est 	3:Sud 	4:Ouest
 	 * 
 	 * @see Clavier#keyPressed(KeyEvent)
 	 */
@@ -27,7 +27,7 @@ public class Clavier implements KeyListener{
 	 * m indique la direction du joueur 2.
 
 	 * Elle est initialisé vers le nord (haut) au début.
-	 * 1:Nord	2:Est 3:Sud 4:Ouest
+	 * 1:Nord	2:Est 	3:Sud 	4:Ouest
 	 * 
 	 * @see Clavier#keyPressed(KeyEvent)
 	 */
